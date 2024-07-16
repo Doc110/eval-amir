@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Saisie</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Page avec Image</title>
+</head>
+<body>
+    <h1>Plateforme de Saisie et Évaluation des Actes Vaccinaux</h1>
+    <h2>Formulaire de Saisie</h2>
+       <form id="dataForm">
+        <label for="year">Année:</label>
+        <select id="year" name="year">
+            <option value="" disabled selected>Sélectionner l'année</option>
+            <!-- Options d'années générées dynamiquement par script.js -->
+        </select>
+
+        <label for="commune">Commune:</label>
+        <select id="commune" name="commune">
+            <option value="" disabled selected>Sélectionner la commune</option>
+            <option value="Tighennif">Tighennif</option>
+            <option value="Sehailia">Sehailia</option>
+            <option value="Sidi Kada">Sidi Kada</option>
+        </select>
+
+        <label for="month">Mois:</label>
+        <select id="month" name="month">
+            <option value="" disabled selected>Sélectionner le mois</option>
+            <option value="January">Janvier</option>
+            <option value="February">Février</option>
+             <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+        </select>
+
+        <div id="dynamicFields"></div>
+        <div id="navigationButtons"></div>
+    </form>
+    <main>
+        <section>
+            <h2>Bienvenue sur la Plateforme Vaccinale</h2>
+            <p>Cette plateforme vous permet de saisir et d'évaluer les actes vaccinaux.</p>
+         <img src="OIP.jpeg" alt="Image d'accueil en 4K">   
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Plateforme Vaccinale</p>
+    </footer>
+</body>
+</html>

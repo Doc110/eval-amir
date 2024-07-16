@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de Données</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.2/xlsx.full.min.js"></script>
+    <script src="table.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Plateforme de Saisie et Évaluation des Actes Vaccinaux</h1>
+    <h2>Tableau de Données</h2>
+    <select id="yearSelect">
+        <!-- Ajouter les options pour les années disponibles -->
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+        <option value="2024">2024</option>
+        <option value="2025">2025</option>
+        <option value="2026">2026</option>
+        <option value="2027">2027</option>
+        <option value="2028">2028</option>
+        <option value="2029">2029</option>
+        <option value="2030">2030</option>
+        <option value="2031">2031</option>
+        <option value="2032">2032</option>
+        <option value="2033">2033</option>
+        <option value="2034">2034</option>
+        <option value="2035">2035</option>
+        <option value="2036">2036</option>
+        <option value="20372">2037</option>
+        <option value="2038">2038</option>
+        <option value="2039">2039</option>
+        <option value="2040">2040</option>
+        <option value="2041">2041</option>
+        <option value="2042">2042</option>
+    </select>
+    <select id="communeSelect">
+        <option value="">Selectionner une Commune</option>
+        <option value="all">Toutes les Communes</option>
+        <option value="Tighennif">Tighennif</option>
+        <option value="Sehailia">Sehailia</option>
+        <option value="Sidi Kada">Sidi Kada</option>
+    </select>
+    <button id="loadDataButton">Charger les Données</button>
+    <button id="recapButton">Récapitulatif</button>
+    <button id="backButton">Retour</button>
+    <button id="generateReportButton">Générer Rapport Graphique</button>
+    <button id="exportButton">Exporter vers Excel</button>
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Mois</th>
+                <th>Naissances</th>
+                <th>Décès</th>
+                <th>Population Cible</th>
+                <th>BCG</th>
+                <th>HBV</th>
+                <th>VPO1</th>
+                <th>Hexa1</th>
+                <th>Pneumo1</th>
+                <th>VPO2</th>
+                <th>Hexa2</th>
+                <th>Pneumo2</th>
+                <th>VPO3</th>
+                <th>Hexa3</th>
+                <th>Pneumo3</th>
+                <th>ROR1</th>
+                <th>ROR2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Le contenu de la table sera généré par JavaScript -->
+        </tbody>
+    </table>
+    <img src="OIP1.jpeg" alt="Image d'accueil en 4K"> 
+    <footer>
+        <p>© 2024 Plateforme Vaccinale</p>
+    </footer>
+</body>
+</html>
